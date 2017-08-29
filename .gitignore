@@ -1,0 +1,8 @@
+/node_modules/
+/bower_components/
+/startbootstrap-creative-gh-pages/
+.idea/
+.DS_Store
+/js/filter.js
+.ai
+.idea

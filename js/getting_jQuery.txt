@@ -1,0 +1,34 @@
+=====================
+jQuery
+=====================
+
+go to  https://code.jquery.com/ to get the version you need
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+The integrity and crossorigin attributes are used for Subresource Integrity (SRI)
+checking. This allows browsers to ensure that resources hosted on third-party
+servers have not been tampered with. Use of SRI is recommended as a best-practice,
+ whenever libraries are loaded from a third-party source.
+ Read more at srihash.org
+
+
+
+
+=====================
+Modernizr
+=====================
+https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
+
+
+
+
+
+=====================
+CDNs
+=====================
+https://cdnjs.com/
