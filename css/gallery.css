@@ -1,0 +1,134 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+
+.slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+}
+
+.slider li {
+    padding: 0;
+    margin: 0;
+    width: 33.333333%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: none;
+}
+
+.slider li img {
+    border: none;
+    width: 100%;
+    min-height: 100%;
+}
+
+.slider button {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    opacity: 0;
+    z-index: 2;
+}
+
+.slider button.prev {
+    left: 0;
+}
+
+.slider button.next {
+    right: 0;
+}
+
+.slider button:hover, .slider button:active {
+    opacity: 1.0;
+}
+
+.slider .content {
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 3em;
+    padding: 0 1em;
+    font-size: 1.5em;
+}
+
+.slider .content a {
+    color: inherit;
+}
+
+.slide1 {
+    background-image: url("https://images.pexels.com/photos/40120/pexels-photo-40120.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide2 {
+    background-image: url("https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide3 {
+    background-image: url("https://images.pexels.com/photos/27665/pexels-photo-27665.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100%;
+    padding: 90px 0 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* create dot thumbnail navigation*/
+
+.dotNav{
+    bottom: 30px;
+    position: absolute;
+    width: 100%;
+
+}
+
+.dotNavItem{
+    background: #fff;
+    border: 2px solid #ff686b;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    transition: background .4s;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.activeDot{
+    background: #ff686b;
+    transform: scale(1.3);
+}
